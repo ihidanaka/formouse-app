@@ -1,0 +1,100 @@
+
+
+.container {
+  //padding: 0 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    flex-direction: column;
+}
+
+
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4,min(80px));
+  gap: 5px;
+
+  text-align: center;
+  min-width: 220px;
+  position: relative;
+  
+  .img {
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: 105px;
+    background-color: transparent;
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
+  .block {
+    
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 78px;
+    background-color: #C2DBF6;//#F07C7C;
+
+    .time {
+    font-size: 48px;
+    background-color: #C2DBF6;//#F07C7C;
+    color: #6885D9;
+    
+    }
+    .label {
+      font-size: 14px;
+      margin-top: 10px;
+      background-color: #C2DBF6;//#F07C7C;
+      color: #6885D9;
+    }
+  }
+
+  .days {
+    
+
+    .label {}
+  }
+
+  .hours {
+    
+
+    .label {}
+  }
+
+  .minutes {
+
+
+    .label {}
+  }
+
+  .seconds {
+
+
+    .label {}
+  }
+}
+
+.happy {
+  display: flex;
+  margin-bottom: 50px;
+  font-size: 36px;
+
+  .word {
+    margin-left: 25px;
+    
+  }
+  @for $i from 0 to 14 {
+    :nth-child(#{$i}) {
+    color: rgb(random(255), random(255), random(255));
+  }
+  }
+  
+}
+
