@@ -108,8 +108,8 @@ const Home: NextPage = () => {
   const [difference, setDifference] = React.useState(1);
 
   useEffect(() => {
-    //const target = new Date("09/22/2022 00:00:00");
-    const target = new Date("09/03/2022 13:13:00");
+    const target = new Date("09/22/2022 00:00:00");
+
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -190,6 +190,8 @@ const Home: NextPage = () => {
   ) : (
     <div className={styles.container}>
       <div className={styles.end}>
+        <div className={styles.title}>See your surprise in backpack :3</div>
+        
         <div className={styles.heart}>
           <Rubber>
             <Image
